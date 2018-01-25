@@ -1,0 +1,32 @@
+.catalog-item {
+  display: flex;
+  flex-direction: column;
+
+  .catalog-item__link {
+    display: flex;
+    flex-direction: column;
+
+    font-family: $font-family;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .catalog-item__features {
+    font-family: $font-family;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 30px;
+    color: #444;
+  }
+
+  .catalog-item__price {
+    font-family: $font-family;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 24px;
+    color: #444;
+  }
+}
