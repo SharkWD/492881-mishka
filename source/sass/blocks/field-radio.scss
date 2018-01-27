@@ -1,15 +1,15 @@
-.field-radio__title {
-  font-family: $font-family;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 16px;
-  color: #63d1bb;
-}
+.field-radio {
+  &__title {
+    font-weight: bold;
+    font-size: $font-size--middle;
+    line-height: $line-height--middle - 8px;
+    color: #63d1bb;
+  }
 
-.field-radio__name-text {
-  font-family: $font-family;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 18px;
-  color: #000;
+  &__name-text {
+    font-weight: bold;
+    font-size: $font-size--middle;
+    line-height: $line-height--middle - 6px;
+    color: #000000;
+  }
 }

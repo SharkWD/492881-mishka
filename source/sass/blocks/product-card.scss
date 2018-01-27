@@ -2,11 +2,9 @@
   display: flex;
   flex-direction: column;
 
-  .product-card__descr {
-    font-family: $font-family;
+  &__descr {
     font-weight: bold;
-    font-size: 17px;
-    line-height: 24px;
-    color: #444444;
+    font-size: $font-size--middle;
+    line-height: $line-height--middle;
   }
 }

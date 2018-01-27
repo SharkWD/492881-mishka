@@ -1,33 +1,29 @@
 .advantages {
-  .advantages__title {
-    font-family: $font-family;
+  &__title {
     font-weight: bold;
-    font-size: 25px;
-    line-height: 30px;
-    color: #000;
+    font-size: $font-size + 10px;
+    color: #000000;
   }
 
-  .advantages__list {
+  &__list {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     list-style: none;
-    display: flex;
-    flex-direction: column;
   }
 
-  .advantages__item {
+  &__item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     min-height: 150px;
   }
 
-  .advantages__link {
-    font-family: $font-family;
+  &__link {
     font-weight: bold;
-    font-size: 17px;
-    line-height: 20px;
-    color: #000;
-    text-decoration: none;
+    font-size: $font-size--middle;
+    line-height: $line-height - 10px;
+    color: #000000;
   }
 }

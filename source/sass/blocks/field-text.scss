@@ -2,19 +2,17 @@
   display: flex;
   flex-direction: column;
 
-  .field-text__name {
-    font-family: $font-family;
+  &__name {
     font-weight: bold;
-    font-size: 17px;
-    line-height: 18px;
-    color: #000;
+    font-size: $font-size--middle;
+    line-height: $line-height--middle - 6px;
+    color: #000000;
   }
 
-  .field-text__title {
-    font-family: $font-family;
+  &__title {
     font-weight: bold;
-    font-size: 17px;
-    line-height: 16px;
-    color: #63d1bb;
+    font-size: $font-size--middle;
+    line-height: $line-height--middle - 8px;
+    color: $color-main;
   }
 }

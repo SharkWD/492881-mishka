@@ -1,15 +1,15 @@
-.field-checkbox__title {
-  font-family: $font-family;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 16px;
-  color: #63d1bb;
-}
+.field-checkbox {
+  &__title {
+    font-weight: bold;
+    font-size: $font-size--middle;
+    line-height: $line-height--middle - 8px;
+    color: $color-main;
+  }
 
-.field-checkbox__name-text {
-  font-family: $font-family;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 18px;
-  color: #000;
+  &__name-text {
+    font-weight: bold;
+    font-size: $font-size--middle;
+    line-height: $line-height--middle - 6px;
+    color: #000000;
+  }
 }

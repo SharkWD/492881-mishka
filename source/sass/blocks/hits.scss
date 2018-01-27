@@ -2,34 +2,24 @@
   display: flex;
   flex-direction: column;
 
-  .hits__title {
-    font-family: $font-family;
+  &__title {
     font-weight: bold;
-    font-size: 25px;
-    line-height: 30px;
-    color: #000;
+    font-size: $font-size + 10px;
+    color: #000000;
   }
 
-  .hits__week {
-    font-family: $font-family;
+  &__week {
     font-weight: bold;
-    font-size: 17px;
-    line-height: 20px;
-    color: #63d1bb;
+    font-size: $font-size + 10px;
+    line-height: $line-height--middle - 4px;
+    color: $color-main;
   }
 
-  .hits__descr {
-    font-family: $font-family;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 24px;
-    color: #444;
+  &__descr {
+    line-height: $line-height--middle - 4px;
   }
 
-  .hits__features {
-    font-family: $font-family;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 20px;
-    color: #444;}
+  &__features {
+    line-height: $line-height--middle - 4px;
+  }
 }

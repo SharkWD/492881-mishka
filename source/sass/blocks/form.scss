@@ -1,21 +1,16 @@
 .form {
   display: flex;
   flex-direction: column;
-}
-.form__descr {
-  p {
-    font-family: $font-family;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 24px;
-    color: #444;
-  }
-}
 
-.form__required {
-  font-family: $font-family;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 24px;
-  color: #444;
+  &__descr {
+    p {
+      font-size: $font-size - 2px;
+      line-height: $line-height--middle;
+    }
+  }
+
+  &__required {
+    font-size: $font-size - 2px;
+    line-height: $line-height--middle;
+  }
 }

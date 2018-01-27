@@ -1,13 +1,15 @@
-.page-footer__wrap {
-  display: flex;
-  flex-direction: column;
-  background-color: #f1f1f1;
-}
+.page-footer {
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-grey--light;
+  }
 
-.page-footer__copyright-developer {
-    font-family: $font-family;
+
+  &__copyright-developer {
     font-weight: bold;
-    font-size: 19px;
-    line-height: 19px;
-    color: #000;
+    font-size: $font-size--middle + 2px;
+    line-height: $line-height--middle - 5px;
+    color: #000000;
+  }
 }

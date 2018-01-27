@@ -1,7 +1,8 @@
-.fields-user__title {
-  font-family: $font-family;
+.fields-user {
+  &__title {
   font-weight: bold;
-  font-size: 17px;
-  line-height: 16px;
-  color: #63d1bb;
+  font-size: $font-size--middle;
+  line-height: $line-height--middle - 8px;
+  color: $color-main;
+  }
 }
