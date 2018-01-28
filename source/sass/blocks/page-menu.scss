@@ -1,0 +1,26 @@
+.page-menu {
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__link {
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: $font-size--middle;
+    line-height: $line-height--middle;
+    font-weight: bold;
+    color: #000000;
+  }
+
+  &__item {
+    border-bottom: 1px solid $color-grey;
+  }
+}

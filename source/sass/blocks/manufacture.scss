@@ -1,0 +1,16 @@
+.manufacture {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-weight: bold;
+    font-size: $font-size--middle;
+    line-height: $line-height--middle - 4;
+    color: #000000;
+  }
+
+  &__deskr {
+    font-size: $font-size - 2;
+    line-height: $line-height--middle;
+  }
+}

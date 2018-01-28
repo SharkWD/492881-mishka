@@ -1,0 +1,16 @@
+.field-checkbox {
+
+  &__title {
+    font-weight: bold;
+    font-size: $font-size--middle;
+    line-height: $line-height--middle - 8;
+    color: $color-main;
+  }
+
+  &__name-text {
+    font-weight: bold;
+    font-size: $font-size--middle;
+    line-height: $line-height--middle - 6;
+    color: #000000;
+  }
+}

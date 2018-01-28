@@ -1,0 +1,14 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+
+  &__descr {
+    font-weight: bold;
+    font-size: $font-size--middle;
+    line-height: $line-height--middle;
+  }
+
+  &__btn {
+    width: 260px;
+  }
+}

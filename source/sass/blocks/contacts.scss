@@ -1,0 +1,14 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-weight: bold;
+    font-size: $font-size + 3;
+    color: #000000;
+  }
+
+  &__btn {
+    width: 260px;
+  }
+}

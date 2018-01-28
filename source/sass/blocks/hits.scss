@@ -1,0 +1,25 @@
+.hits {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-weight: bold;
+    font-size: $font-size + 10;
+    color: #000000;
+  }
+
+  &__week {
+    font-weight: bold;
+    font-size: $font-size + 10;
+    line-height: $line-height--middle - 4;
+    color: $color-main;
+  }
+
+  &__descr {
+    line-height: $line-height--middle - 4;
+  }
+
+  &__features {
+    line-height: $line-height--middle - 4;
+  }
+}
