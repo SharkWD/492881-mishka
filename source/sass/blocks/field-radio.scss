@@ -1,15 +1,16 @@
 .field-radio {
+
   &__title {
     font-weight: bold;
     font-size: $font-size--middle;
-    line-height: $line-height--middle - 8px;
+    line-height: $line-height--middle - 8;
     color: #63d1bb;
   }
 
   &__name-text {
     font-weight: bold;
     font-size: $font-size--middle;
-    line-height: $line-height--middle - 6px;
+    line-height: $line-height--middle - 6;
     color: #000000;
   }
 }

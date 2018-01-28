@@ -1,7 +1,7 @@
 .advantages {
   &__title {
     font-weight: bold;
-    font-size: $font-size + 10px;
+    font-size: $font-size + 10;
     color: #000000;
   }
 
@@ -23,7 +23,7 @@
   &__link {
     font-weight: bold;
     font-size: $font-size--middle;
-    line-height: $line-height - 10px;
+    line-height: $line-height - 10;
     color: #000000;
   }
 }

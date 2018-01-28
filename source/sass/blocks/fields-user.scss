@@ -1,8 +1,9 @@
 .fields-user {
+
   &__title {
   font-weight: bold;
   font-size: $font-size--middle;
-  line-height: $line-height--middle - 8px;
+  line-height: $line-height--middle - 8;
   color: $color-main;
   }
 }

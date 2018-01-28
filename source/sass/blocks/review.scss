@@ -1,15 +1,16 @@
 .review {
 
   &__add-new {
-    display: inline-block;
+    display: block;
     padding-left: 75px;
-    font-size: $font-size--middle + 1px;
-    line-height: $line-height--middle - 4px;
+    width: 260px;
+    font-size: $font-size--middle + 1;
+    line-height: $line-height--middle - 4;
   }
 
   &__title {
     font-weight: bold;
-    font-size: $font-size + 10px;
+    font-size: $font-size + 10;
     color: #000000;
   }
 }

@@ -1,15 +1,15 @@
 .page-footer {
+
   &__wrap {
     display: flex;
     flex-direction: column;
     background-color: $color-grey--light;
   }
 
-
   &__copyright-developer {
     font-weight: bold;
-    font-size: $font-size--middle + 2px;
-    line-height: $line-height--middle - 5px;
+    font-size: $font-size--middle + 2;
+    line-height: $line-height--middle - 5;
     color: #000000;
   }
 }
