@@ -12,23 +12,34 @@
     <a href="#" class="page-header__logo">
       <img src="img/logo-mobile.svg" alt="Магазин ручной работы">
     </a>
-    <nav class="page-menu">
-      <button class="page-menu__toggle" type="button">Открыть меню</button>
-      <ul class="page-menu__list">
-        <li class="page-menu__item">
-          <a href="catalog.html" class="page-menu__link">Каталог товаров</a>
-        </li>
-        <li class="page-menu__item">
-          <a href="form.html" class="page-menu__link">Вязание на заказ</a>
-        </li>
-        <li class="page-menu__item">
-          <a href="#" class="page-menu__link">Поиск по сайту</a>
-        </li>
-        <li class="page-menu__item">
-          <a href="#" class="page-menu__link">Корзина: пока пуста</a>
-        </li>
-      </ul>
-    </nav>
+    <button class="page-header__toggle" type="button">Открыть меню</button>
+    <ul class="menu-site">
+      <li class="menu-site__item">
+        <a href="catalog.html" class="menu-site__link">Каталог товаров</a>
+      </li>
+      <li class="menu-site__item">
+        <a href="form.html" class="menu-site__link">Вязание на заказ</a>
+      </li>
+    </ul>
+    <ul class="menu-user">
+      <li class="menu-user__item">
+        <a href="#" class="menu-user__link">Поиск по сайту</a>
+      </li>
+      <li class="menu-user__item">
+        <a href="#" class="menu-user__link">Корзина: пока пуста</a>
+      </li>
+    </ul>
+    <ul class="menu-promo">
+      <li class="menu-promo__item">
+        <a href="#" class="menu-promo__link">Новые поступления</a>
+      </li>
+      <li class="menu-promo__item">
+        <a href="#" class="menu-promo__link">Распродажа</a>
+      </li>
+    </ul>
+    <div class="delivery">
+      <p class="delevery__descr">Бесплатная доставка по России</p>
+    </div>
   </header>
 
   <main class="page-main">
@@ -47,29 +58,31 @@
     </div>
 
     <section class="hits">
-      <h2 class="hits__title">Вязаные корзинки</h2>
-      <h3 class="hits__week">Товар недели</h3>
-      <div class="hits__descr">
-        <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+      <div class="hits__title-wrap">
+        <h2 class="hits__title">Вязаные корзинки</h2>
+        <h3 class="hits__week">Товар недели</h3>
       </div>
-      <table class="hits__features">
-        <tr>
-          <td class="hits__field">Цвет:</td>
-          <td class="hits__value">«Тиффани»/серый</td>
-        </tr>
-        <tr>
-          <td class="hits__field">Диаметр:</td>
-          <td class="hits__value">25 см</td>
-        </tr>
-        <tr>
-          <td class="hits__field">Высота:</td>
-          <td class="hits__value">15 см</td>
-        </tr>
-      </table>
-      <div class="product-card">
-        <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки" class="product-card__photo">
-        <p class="product-card__descr">Цена: 990 руб.</p>
-        <button type="button" class="btn product-card__btn">Заказать</button>
+      <div class="hits__product-wrap">
+        <div class="hits__descr">
+          <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        </div>
+        <table class="hits__features">
+          <tr>
+            <td class="hits__field">Цвет:</td>
+            <td class="hits__value">«Тиффани»/серый</td>
+          </tr>
+          <tr>
+            <td class="hits__field">Диаметр:</td>
+            <td class="hits__value">25 см</td>
+          </tr>
+          <tr>
+            <td class="hits__field">Высота:</td>
+            <td class="hits__value">15 см</td>
+          </tr>
+        </table>
+          <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки" class="hits__photo">
+          <p class="product-card__descr">Цена: 990 руб.</p>
+          <button type="button" class="btn hits__btn">Заказать</button>
       </div>
     </section>
 

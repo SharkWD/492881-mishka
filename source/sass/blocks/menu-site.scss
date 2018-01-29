@@ -1,0 +1,40 @@
+.menu-site {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    font-size: $font-size;
+    order: 3;
+  }
+
+  @media (min-width: $screen-desktop) {
+    display: flex;
+    order: 1;
+  }
+
+  &__link {
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: $font-size--middle;
+    line-height: $line-height--middle;
+    font-weight: bold;
+    color: #000000;
+
+    @media (min-width: $screen-tablet) {
+      font-size: $font-size;
+    }
+
+    @media (min-width: $screen-desktop) {
+      font-size: $font-size--middle;
+    }
+  }
+
+  &__item {
+    border-bottom: 1px solid $color-grey;
+  }
+}

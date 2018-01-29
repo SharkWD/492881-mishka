@@ -6,12 +6,17 @@
     flex-direction: column;
     margin: 0;
     padding: 0;
+
+    @media (min-width: $screen-tablet) {
+      flex-direction: row;
+    }
   }
 
   &__item {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
     min-height: 103px;
     background-color: $color-main;
 

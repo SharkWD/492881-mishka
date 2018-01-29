@@ -1,0 +1,23 @@
+.menu-promo {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $screen-desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    order: 3;
+  }
+
+  &__link {
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 30px;
+    padding-left: 30px;
+    line-height: $line-height--middle;
+    font-weight: bold;
+    color: #000000;
+  }
+}

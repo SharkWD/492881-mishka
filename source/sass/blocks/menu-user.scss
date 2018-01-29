@@ -1,18 +1,16 @@
-/*.page-menu {
+.menu-user {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 
-  &__site {
+  @media (min-width: $screen-tablet) {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    margin-left: auto;
+    order: 2;
   }
 
-  &__user {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  @media (min-width: $screen-desktop) {
+    margin-left: 0;
   }
 
   &__link {
@@ -30,4 +28,4 @@
   &__item {
     border-bottom: 1px solid $color-grey;
   }
-}*/
+}

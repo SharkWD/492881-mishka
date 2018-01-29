@@ -1,6 +1,11 @@
 .hits {
   display: flex;
   flex-direction: column;
+  padding-right: 30px;
+  padding-left: 30px;
+
+  @media (min-width: $screen-tablet) {
+    }
 
   &__title {
     font-weight: bold;
@@ -8,18 +13,50 @@
     color: #000000;
   }
 
+  &__title-wrap {
+    @media (min-width: $screen-tablet) {
+      display: flex;
+    }
+  }
+
   &__week {
     font-weight: bold;
     font-size: $font-size + 10;
     line-height: $line-height--middle - 4;
     color: $color-main;
+
+    @media (min-width: $screen-tablet) {
+      margin-left: auto;
+      max-width: 170px;
+      line-height: $line-height--middle - 7;
+    }
   }
 
   &__descr {
     line-height: $line-height--middle - 4;
+
+    @media (min-width: $screen-tablet) {
+      max-width: 334px;
+    }
   }
 
   &__features {
     line-height: $line-height--middle - 4;
+  }
+
+  &__product-wrap {
+
+    @media (min-width: $screen-tablet) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__btn {
+    width: 260px;
+
+    @media (min-width: $screen-tablet) {
+      align-self: flex-start;
+    }
   }
 }

@@ -1,0 +1,14 @@
+.delivery {
+  display: none;
+  padding-right: 30px;
+
+  @media (min-width: $screen-tablet) {
+    display: block;
+    margin-left: auto;
+    order: 4;
+  }
+
+  &__descr {
+    margin: 0;
+  }
+}
