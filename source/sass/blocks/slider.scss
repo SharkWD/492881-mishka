@@ -1,6 +1,9 @@
 .slider {
+  position: relative;
 
   &__item {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     p {
@@ -24,7 +27,13 @@
     display: flex;
     margin: 0;
     padding: 0;
-}
+
+    @media (min-width: $screen-tablet) {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
 
   &__nav-item {
     display: flex;

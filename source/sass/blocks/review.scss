@@ -1,4 +1,26 @@
 .review {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 1150px;
+
+
+
+  @media (min-width: $screen-desktop) {
+    margin: auto;
+  }
+
+  &__wrap {
+
+    @media (min-width: $screen-tablet) {
+      background-image: url("../../img/review@1x.jpg");
+      background-repeat: no-repeat;
+    }
+
+    @media (min-width: $screen-desktop) {
+      padding-left: 195px;
+    }
+  }
 
   &__add-new {
     display: block;
@@ -6,6 +28,12 @@
     width: 260px;
     font-size: $font-size--middle + 1;
     line-height: $line-height--middle - 4;
+
+    @media (min-width: $screen-tablet) {
+      position: absolute;
+      top: 0;
+      right: 30px;
+    }
   }
 
   &__title {

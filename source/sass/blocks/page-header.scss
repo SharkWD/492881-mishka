@@ -1,11 +1,16 @@
 .page-header {
   display: flex;
   flex-direction: column;
+  max-width: 1150px;
   background-color: #ffffff;
 
   @media (min-width: $screen-tablet) {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin: auto;
   }
 
   &__logo {

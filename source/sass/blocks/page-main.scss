@@ -12,8 +12,17 @@
 
   &__wrap {
     padding-top: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-shrink: 0;
     background-image: url("../../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
-    background-position: -125px 0px;
+    background-position: center 0;
+
+    @media (min-width: $screen-desktop) {
+      margin: auto;
+      width: 100%;
+      max-width: 1150px;
+    }
   }
 }

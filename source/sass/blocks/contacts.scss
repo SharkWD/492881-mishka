@@ -1,14 +1,55 @@
 .contacts {
+  position: relative;
   display: flex;
   flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  max-width: 1150px;
+
+  @media (min-width: $screen-desktop) {
+    margin: auto;
+    margin-top: 75px;
+    padding-left: 225px;
+    min-height: 562px;
+  }
 
   &__title {
     font-weight: bold;
     font-size: $font-size + 3;
     color: #000000;
+
+    @media (min-width: $screen-desktop) {
+      font-size: $font-size--middle + 36;
+    }
+  }
+
+  &__info {
+
+    tbody {
+
+      @media (min-width: $screen-tablet) {
+        display: flex;
+      }
+
+      @media (min-width: $screen-desktop) {
+        flex-direction: column;
+      }
+    }
   }
 
   &__btn {
     width: 260px;
+
+    @media (min-width: $screen-tablet) {
+      display: flex;
+      align-self: center;
+    }
+
+    @media (min-width: $screen-desktop) {
+      position: absolute;
+      bottom: 105px;
+      left: 225px;
+    }
   }
 }

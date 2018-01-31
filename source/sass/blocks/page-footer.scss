@@ -1,9 +1,32 @@
 .page-footer {
+  background-color: $color-grey--light;
 
   &__wrap {
     display: flex;
     flex-direction: column;
-    background-color: $color-grey--light;
+    padding-right: 30px;
+    padding-left: 30px;
+    max-width: 1150px;
+
+
+    @media (min-width: $screen-tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @media (min-width: $screen-desktop) {
+      margin: auto;
+    }
+  }
+
+  &__logo {
+    display: none;
+
+   @media (min-width: $screen-tablet) {
+      display: flex;
+      align-self: center;
+    }
   }
 
   &__copyright-developer {
