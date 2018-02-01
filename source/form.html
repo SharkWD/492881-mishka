@@ -43,7 +43,7 @@
     </div>
   </header>
 
-  <main class="page-main">
+  <main class="page-main page-main--form">
     <h1 class="page-main__title">Вязание на заказ</h1>
     <form action="https://echo.htmlacademy.ru" class="form" method="post">
       <div class="form__descr">
@@ -52,22 +52,25 @@
 
       <div class="field-radio">
         <div class="field-radio__title">Тип</div>
-        <div class="field-radio__input-wrap">
-          <label class="field-radio__name">
-            <input class="field-radio__input" type="radio" name="decor" checked="checked">
-            <span class="field-radio__name-text">Аксессуар для интерьера</span>
-          </label>
-        </div>
-        <div class="field-radio__input-wrap">
-          <label class="field-radio__name">
-            <input class="field-radio__input" type="radio" name="toy">
-            <span class="field-radio__name-text">Детская игрушка</span>
-          </label>
+        <div class="field-radio__wrap">
+          <div class="field-radio__input-wrap">
+            <label class="field-radio__name">
+              <input class="field-radio__input" type="radio" name="decor" checked="checked">
+              <span class="field-radio__name-text">Аксессуар для интерьера</span>
+            </label>
+          </div>
+          <div class="field-radio__input-wrap">
+            <label class="field-radio__name">
+              <input class="field-radio__input" type="radio" name="toy">
+              <span class="field-radio__name-text">Детская игрушка</span>
+            </label>
+          </div>
         </div>
       </div>
 
       <div class="field-checkbox">
         <div class="field-checkbox__title">Цвет</div>
+        <div class="field-checkbox__wrap">
         <div class="field-checkbox__input-wrap">
           <label class="field-checkbox__name">
             <input class="field-checkbox__input" type="checkbox" name="white" checked="checked">
@@ -103,6 +106,7 @@
             <input class="field-checkbox__input" type="checkbox" name="orange">
             <span class="field-checkbox__name-text">Оранжевый</span>
           </label>
+        </div>
         </div>
       </div>
 
@@ -174,6 +178,9 @@
 
   <footer class="page-footer">
     <div class="page-footer__wrap">
+      <a href="#" class="page-footer__logo">
+      <img src="img/logo-mobile.svg" alt="Магазин ручной работы">
+    </a>
       <ul class="social">
         <li class="social__item">
           <a href="#" class="social__link  social__link--instagram">Мы в инстаграмме</a>

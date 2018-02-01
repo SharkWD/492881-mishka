@@ -8,6 +8,10 @@
     font-weight: bold;
     font-size: $font-size--h1;
     color: #000000;
+
+    @media (min-width: $screen-desktop) {
+      align-self: center;
+    }
   }
 
   &__wrap {
@@ -23,6 +27,26 @@
       margin: auto;
       width: 100%;
       max-width: 1150px;
+    }
+  }
+
+  &--catalog {
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 1150px;
+
+    @media (min-width: $screen-desktop) {
+      margin: auto;
+    }
+  }
+
+  &--form {
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 1150px;
+
+    @media (min-width: $screen-desktop) {
+      margin: auto;
     }
   }
 }

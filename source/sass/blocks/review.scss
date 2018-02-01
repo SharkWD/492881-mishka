@@ -4,8 +4,6 @@
   padding-right: 30px;
   max-width: 1150px;
 
-
-
   @media (min-width: $screen-desktop) {
     margin: auto;
   }
@@ -15,6 +13,7 @@
     @media (min-width: $screen-tablet) {
       background-image: url("../../img/review@1x.jpg");
       background-repeat: no-repeat;
+      background-position: top left;
     }
 
     @media (min-width: $screen-desktop) {

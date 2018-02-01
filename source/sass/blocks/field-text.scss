@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
 
+  @media (min-width: $screen-tablet) {
+    flex-direction: row;
+  }
+
   &__name {
     font-weight: bold;
     font-size: $font-size--middle;
@@ -14,5 +18,10 @@
     font-size: $font-size--middle;
     line-height: $line-height--middle - 8;
     color: $color-main;
+
+    @media (min-width: $screen-tablet) {
+      flex-shrink: 0;
+      width: 175px;
+    }
   }
 }
