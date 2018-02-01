@@ -9,8 +9,7 @@
 
     @media (min-width: $screen-tablet) {
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
+      flex-direction: column;
     }
 
     @media (min-width: $screen-desktop) {

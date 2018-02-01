@@ -27,6 +27,8 @@
   &__descr {
 
     @media (min-width: $screen-tablet) {
+      display: flex;
+      flex-direction: column;
       padding-left: 25px;
     }
   }
@@ -39,5 +41,9 @@
     font-weight: bold;
     line-height: $line-height--middle;
     color: #000000;
+
+    @media (min-width: $screen-tablet) {
+      margin-top: auto;
+    }
   }
 }
