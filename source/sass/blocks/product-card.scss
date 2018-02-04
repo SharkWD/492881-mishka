@@ -10,5 +10,10 @@
     font-weight: bold;
     font-size: $font-size--middle;
     line-height: $line-height--middle;
+
+    @media (min-width: $screen-tablet) {
+      margin-left: 70px;
+    }
   }
+
 }

@@ -28,4 +28,8 @@
   &__item {
     border-bottom: 1px solid $color-grey;
   }
+
+  .page-header--no-js .menu-user {
+    display: block;
+  }
 }

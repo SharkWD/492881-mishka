@@ -1,4 +1,4 @@
-.menu-site {
+.site-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -37,9 +37,5 @@
 
   &__item {
     border-bottom: 1px solid $color-grey;
-  }
-
-  .page-header--no-js .menu-site {
-    display: block;
   }
 }

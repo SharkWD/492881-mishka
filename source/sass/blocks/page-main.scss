@@ -2,9 +2,13 @@
   display: flex;
   flex-direction: column;
 
+  @media (max-width: $screen-tablet) {
+    align-items: center;
+  }
+
   &__title {
     display: block;
-    max-width: 215px;
+    max-width: 260px;
     margin: 0;
     padding: 0;
     align-self: center;

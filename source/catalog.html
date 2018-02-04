@@ -10,37 +10,39 @@
 <body>
 
   <header class="page-header">
-    <a href="index.html" class="page-header__logo">
-      <img src="img/logo-mobile.svg" alt="Магазин ручной работы">
-    </a>
-    <button class="page-header__toggle" type="button">Открыть меню</button>
-    <ul class="menu-site">
-      <li class="menu-site__item">
-        <a href="catalog.html" class="menu-site__link">Каталог товаров</a>
-      </li>
-      <li class="menu-site__item">
-        <a href="form.html" class="menu-site__link">Вязание на заказ</a>
-      </li>
-    </ul>
-    <ul class="menu-user">
-      <li class="menu-user__item">
-        <a href="#" class="menu-user__link">Поиск по сайту</a>
-      </li>
-      <li class="menu-user__item">
-        <a href="#" class="menu-user__link">Корзина: пока пуста</a>
-      </li>
-    </ul>
-    <ul class="menu-promo">
-      <li class="menu-promo__item">
-        <a href="#" class="menu-promo__link">Новые поступления</a>
-      </li>
-      <li class="menu-promo__item">
-        <a href="#" class="menu-promo__link">Распродажа</a>
-      </li>
-    </ul>
-    <div class="delivery">
-      <p class="delevery__descr">Бесплатная доставка по России</p>
-    </div>
+    <nav class="main-nav  main-nav--closed  main-nav--no-js">
+      <a href="#" class="main-nav__logo">
+        <img src="img/logo-mobile.svg" width="86px" height="35px" alt="Магазин ручной работы">
+      </a>
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="catalog.html" class="site-list__link">Каталог товаров</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html" class="site-list__link">Вязание на заказ</a>
+        </li>
+      </ul>
+      <ul class="main-nav__list user-list">
+        <li class="user-list__item">
+          <a href="#" class="user-list__link">Поиск по сайту</a>
+        </li>
+        <li class="user-list__item">
+          <a href="#" class="user-list__link">Корзина: пока пуста</a>
+        </li>
+      </ul>
+      <ul class="main-nav__list promo-list">
+        <li class="promo-list__item">
+          <a href="#" class="promo-list__link">Новые поступления</a>
+        </li>
+        <li class="promo-list__item">
+          <a href="#" class="promo-list__link">Распродажа</a>
+        </li>
+      </ul>
+      <div class="delivery">
+        <p class="delevery__descr">Бесплатная доставка по России</p>
+      </div>
+    </nav>
   </header>
 
   <main class="page-main page-main--catalog">
@@ -112,6 +114,8 @@
       </div>
     </div>
   </footer>
+
+<script src="js/menu.js"></script>
 
 </body>
 </html>
