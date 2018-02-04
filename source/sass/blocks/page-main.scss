@@ -3,31 +3,41 @@
   flex-direction: column;
 
   &__title {
+    display: block;
+    max-width: 215px;
     margin: 0;
     padding: 0;
+    align-self: center;
     font-weight: bold;
     font-size: $font-size--h1;
+    line-height: $line-height;
+    text-align: center;
     color: #000000;
 
+    @media (min-width: $screen-tablet) {
+      max-width: 500px;
+      font-size: $font-size--h1 + 16;
+      line-height: $line-height + 20;
+    }
+
     @media (min-width: $screen-desktop) {
-      align-self: center;
+      max-width: 615px;
+      font-size: $font-size--h1 + 26;
+      line-height: $line-height + 27;
     }
   }
 
   &__wrap {
+    display: flex;
+    flex-direction: column;
     padding-top: 70px;
     padding-left: 30px;
     padding-right: 30px;
     flex-shrink: 0;
+    background-color: $color-grey--middle;
     background-image: url("../../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: center 0;
-
-    @media (min-width: $screen-desktop) {
-      margin: auto;
-      width: 100%;
-      max-width: 1150px;
-    }
   }
 
   &--catalog {
