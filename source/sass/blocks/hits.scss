@@ -1,11 +1,39 @@
 .hits {
   display: flex;
   flex-direction: column;
+  padding-right: 30px;
+  padding-left: 30px;
+  width: 100%;
+  max-width: 1150px;
+
+  @media (min-width: $screen-desktop) {
+    margin: auto;
+    }
 
   &__title {
+    margin: 0;
+    padding: 0;
     font-weight: bold;
     font-size: $font-size + 10;
     color: #000000;
+
+    @media (min-width: $screen-desktop) {
+      font-size: $font-size--h1 + 26;
+      order: 2;
+    }
+  }
+
+  &__title-wrap {
+
+    @media (min-width: $screen-tablet) {
+      display: flex;
+      margin-bottom: 57px;
+    }
+
+    @media (min-width: $screen-desktop) {
+      margin-top: 130px;
+      align-items: flex-end;
+    }
   }
 
   &__week {
@@ -13,13 +41,62 @@
     font-size: $font-size + 10;
     line-height: $line-height--middle - 4;
     color: $color-main;
+
+    @media (min-width: $screen-tablet) {
+      margin-left: auto;
+      max-width: 170px;
+      line-height: $line-height--middle - 7;
+    }
+
+    @media (min-width: $screen-desktop) {
+      margin-left: 30px;
+      order: 1;
+    }
   }
 
   &__descr {
     line-height: $line-height--middle - 4;
+
+    @media (min-width: $screen-tablet) {
+      max-width: 334px;
+    }
   }
 
   &__features {
     line-height: $line-height--middle - 4;
+  }
+
+  &__product-wrap {
+    position: relative;
+
+    @media (min-width: $screen-tablet) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media (min-width: $screen-desktop) {
+      padding-left: 195px;
+    }
+  }
+
+  &__photo {
+
+    @media (min-width: $screen-tablet) {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    @media (min-width: $screen-desktop) {
+      top: -100px;
+    }
+  }
+
+  &__btn {
+    width: 260px;
+
+    @media (min-width: $screen-tablet) {
+      align-self: flex-start;
+    }
   }
 }

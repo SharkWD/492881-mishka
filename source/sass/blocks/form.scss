@@ -1,8 +1,14 @@
 .form {
+  position: relative;
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
 
   &__descr {
+
+    @media (min-width: $screen-desktop) {
+      margin-left: 175px;
+    }
 
     p {
       font-size: $font-size - 2;
@@ -13,6 +19,15 @@
   &__required {
     font-size: $font-size - 2;
     line-height: $line-height--middle;
+
+    @media (min-width: $screen-tablet) {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+    @media (min-width: $screen-desktop) {
+      right: 175px;
+    }
   }
 
   &__btn {

@@ -1,8 +1,26 @@
 .advantages {
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  max-width: 1150px;
+
+  @media (min-width: $screen-desktop) {
+    margin: auto;
+    padding-left: 225px;
+  }
+
   &__title {
     font-weight: bold;
     font-size: $font-size + 10;
     color: #000000;
+
+    @media (min-width: $screen-tablet) {
+      font-size: $font-size--middle + 26;
+    }
+
+    @media (min-width: $screen-desktop) {
+      font-size: $font-size--middle + 36;
+    }
   }
 
   &__list {
@@ -25,5 +43,12 @@
     font-size: $font-size--middle;
     line-height: $line-height - 10;
     color: #000000;
+  }
+
+  &__wrap {
+
+    @media (min-width: $screen-tablet) {
+      display: flex;
+    }
   }
 }

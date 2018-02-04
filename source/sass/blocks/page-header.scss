@@ -1,5 +1,17 @@
 .page-header {
-  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  max-width: 1150px;
+  background-color: #ffffff;
+
+  @media (min-width: $screen-tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin: auto;
+  }
 
   &__logo {
     display: flex;
@@ -7,5 +19,24 @@
     justify-content: center;
     min-height: 79px;
     border-bottom: 1px solid $color-grey;
+
+    @media (min-width: $screen-tablet) {
+      margin-right: 170px;
+      margin-left: 30px;
+      order: 1;
+    }
+
+    @media (min-width: $screen-desktop) {
+      margin-right: auto;
+      margin-left: auto;
+      order: 2;
+    }
+  }
+
+  &__toggle {
+
+    @media (min-width: $screen-tablet) {
+      display: none;
+    }
   }
 }

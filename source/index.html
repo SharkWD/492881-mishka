@@ -10,25 +10,36 @@
 
   <header class="page-header">
     <a href="#" class="page-header__logo">
-      <img src="img/logo-mobile.svg" alt="Магазин ручной работы">
+      <img src="img/logo-mobile.svg" width="86px" height="35px" alt="Магазин ручной работы">
     </a>
-    <nav class="page-menu">
-      <button class="page-menu__toggle" type="button">Открыть меню</button>
-      <ul class="page-menu__list">
-        <li class="page-menu__item">
-          <a href="catalog.html" class="page-menu__link">Каталог товаров</a>
-        </li>
-        <li class="page-menu__item">
-          <a href="form.html" class="page-menu__link">Вязание на заказ</a>
-        </li>
-        <li class="page-menu__item">
-          <a href="#" class="page-menu__link">Поиск по сайту</a>
-        </li>
-        <li class="page-menu__item">
-          <a href="#" class="page-menu__link">Корзина: пока пуста</a>
-        </li>
-      </ul>
-    </nav>
+    <button class="page-header__toggle" type="button">Открыть меню</button>
+    <ul class="menu-site">
+      <li class="menu-site__item">
+        <a href="catalog.html" class="menu-site__link">Каталог товаров</a>
+      </li>
+      <li class="menu-site__item">
+        <a href="form.html" class="menu-site__link">Вязание на заказ</a>
+      </li>
+    </ul>
+    <ul class="menu-user">
+      <li class="menu-user__item">
+        <a href="#" class="menu-user__link">Поиск по сайту</a>
+      </li>
+      <li class="menu-user__item">
+        <a href="#" class="menu-user__link">Корзина: пока пуста</a>
+      </li>
+    </ul>
+    <ul class="menu-promo">
+      <li class="menu-promo__item">
+        <a href="#" class="menu-promo__link">Новые поступления</a>
+      </li>
+      <li class="menu-promo__item">
+        <a href="#" class="menu-promo__link">Распродажа</a>
+      </li>
+    </ul>
+    <div class="delivery">
+      <p class="delevery__descr">Бесплатная доставка по России</p>
+    </div>
   </header>
 
   <main class="page-main">
@@ -47,74 +58,82 @@
     </div>
 
     <section class="hits">
-      <h2 class="hits__title">Вязаные корзинки</h2>
-      <h3 class="hits__week">Товар недели</h3>
-      <div class="hits__descr">
-        <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+      <div class="hits__title-wrap">
+        <h2 class="hits__title">Вязаные корзинки</h2>
+        <div class="hits__week">Товар недели</div>
       </div>
-      <table class="hits__features">
-        <tr>
-          <td class="hits__field">Цвет:</td>
-          <td class="hits__value">«Тиффани»/серый</td>
-        </tr>
-        <tr>
-          <td class="hits__field">Диаметр:</td>
-          <td class="hits__value">25 см</td>
-        </tr>
-        <tr>
-          <td class="hits__field">Высота:</td>
-          <td class="hits__value">15 см</td>
-        </tr>
-      </table>
-      <div class="product-card">
-        <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки" class="product-card__photo">
-        <p class="product-card__descr">Цена: 990 руб.</p>
-        <button type="button" class="btn product-card__btn">Заказать</button>
+      <div class="hits__product-wrap">
+        <div class="hits__descr">
+          <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        </div>
+        <table class="hits__features">
+          <tr>
+            <td class="hits__field">Цвет:</td>
+            <td class="hits__value">«Тиффани»/серый</td>
+          </tr>
+          <tr>
+            <td class="hits__field">Диаметр:</td>
+            <td class="hits__value">25 см</td>
+          </tr>
+          <tr>
+            <td class="hits__field">Высота:</td>
+            <td class="hits__value">15 см</td>
+          </tr>
+        </table>
+          <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки" class="hits__photo">
+          <p class="product-card__descr">Цена: 990 руб.</p>
+          <button type="button" class="btn hits__btn">Заказать</button>
       </div>
     </section>
 
     <section class="advantages">
       <h2 class="advantages__title">Коротко о нас:</h2>
-      <ul class="advantages__list">
-        <li class="advantages__item">
-          <a href="" class="advantages__link">Экологически чистые материалы</a>
-        </li>
-        <li class="advantages__item">
-          <a href="" class="advantages__link">Скандинавский стиль по российской цене</a>
-        </li>
-        <li class="advantages__item">
-          <a href="" class="advantages__link">Увеличивает лайки на фотографиях</a>
-        </li>
-        <li class="advantages__item">
-          <a href="" class="advantages__link">Связано вручную с любовью и умилением</a>
-        </li>
-        <li class="advantages__item">
-          <a href="" class="advantages__link">Поддержка отечественного производителя</a>
-        </li>
-        <li class="advantages__item">
-          <a href="" class="advantages__link">Поставляется в подарочной упаковке</a>
-        </li>
-      </ul>
-    </section>
-
-    <section class="review">
-      <h2 class="review__title">Отзывы</h2>
-      <div class="slider">
-        <blockquote class="slider__item">
-          <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-          <b class="slider__author">Анастасия Красильникова</b>
-          <a href="#" class="slider__social">@misssssiskras</a>
-        </blockquote>
-        <ul class="slider__nav">
-          <li class="slider__nav-item">
-            <a href="#" class="slider__link">Назад</a>
+      <div class="advantages__wrap">
+        <ul class="advantages__list advantages__list-left">
+          <li class="advantages__item">
+            <a href="" class="advantages__link">Экологически чистые материалы</a>
           </li>
-          <li class="slider__nav-item">
-            <a href="#" class="slider__link">Вперед</a>
+          <li class="advantages__item">
+            <a href="" class="advantages__link">Скандинавский стиль по российской цене</a>
+          </li>
+          <li class="advantages__item">
+            <a href="" class="advantages__link">Увеличивает лайки на фотографиях</a>
+          </li>
+        </ul>
+        <ul class="advantages__list advantages__list-right">
+          <li class="advantages__item">
+            <a href="" class="advantages__link">Связано вручную с любовью и умилением</a>
+          </li>
+          <li class="advantages__item">
+            <a href="" class="advantages__link">Поддержка отечественного производителя</a>
+          </li>
+          <li class="advantages__item">
+            <a href="" class="advantages__link">Поставляется в подарочной упаковке</a>
           </li>
         </ul>
       </div>
-      <a href="#" class="btn review__add-new">Написать</a>
+    </section>
+
+    <section class="review">
+      <div class="review__wrap">
+        <h2 class="review__title">Отзывы</h2>
+        <div class="slider">
+          <blockquote class="slider__item">
+            <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <b class="slider__author">Анастасия Красильникова</b>
+            <a href="#" class="slider__social">@misssssiskras</a>
+          </blockquote>
+          <ul class="slider__nav">
+            <li class="slider__nav-item">
+              <a href="#" class="slider__link">Назад</a>
+            </li>
+            <li class="slider__nav-item">
+              <a href="#" class="slider__link">Вперед</a>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="btn review__add-new">Написать</a>
+      </div>
     </section>
 
     <section class="contacts">
@@ -136,6 +155,9 @@
 
   <footer class="page-footer">
     <div class="page-footer__wrap">
+      <a href="#" class="page-footer__logo">
+        <img src="img/logo-mobile.svg" alt="Магазин ручной работы">
+      </a>
       <ul class="social">
         <li class="social__item">
           <a href="#" class="social__link  social__link--instagram">Мы в инстаграмме</a>

@@ -1,11 +1,13 @@
-.page-menu {
+.menu-promo {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 
-  &__list {
+  @media (min-width: $screen-desktop) {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
+    order: 3;
   }
 
   &__link {
@@ -14,13 +16,8 @@
     padding-bottom: 25px;
     padding-right: 30px;
     padding-left: 30px;
-    font-size: $font-size--middle;
     line-height: $line-height--middle;
     font-weight: bold;
     color: #000000;
-  }
-
-  &__item {
-    border-bottom: 1px solid $color-grey;
   }
 }

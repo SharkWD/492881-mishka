@@ -1,0 +1,13 @@
+.map {
+
+  @media (min-width: $screen-tablet) {
+    width: 100%;
+  }
+
+  @media (min-width: $screen-desktop) {
+    position: absolute;
+    right: 30px;
+    bottom: 105px;
+    width: 320px;
+  }
+}

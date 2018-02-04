@@ -7,12 +7,46 @@
     padding: 0;
     font-weight: bold;
     font-size: $font-size--h1;
+    color: #000000;
+
+    @media (min-width: $screen-desktop) {
+      align-self: center;
+    }
   }
 
   &__wrap {
     padding-top: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-shrink: 0;
     background-image: url("../../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
-    background-position: -125px 0px;
+    background-position: center 0;
+
+    @media (min-width: $screen-desktop) {
+      margin: auto;
+      width: 100%;
+      max-width: 1150px;
+    }
+  }
+
+  &--catalog {
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 1150px;
+
+    @media (min-width: $screen-desktop) {
+      margin: auto;
+    }
+  }
+
+  &--form {
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 1150px;
+
+    @media (min-width: $screen-desktop) {
+      margin: auto;
+    }
   }
 }

@@ -1,10 +1,32 @@
 .field-radio {
 
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__wrap {
+
+    @media (min-width: $screen-tablet) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media (min-width: $screen-desktop) {
+      flex-direction: column;
+    }
+  }
+
   &__title {
     font-weight: bold;
     font-size: $font-size--middle;
     line-height: $line-height--middle - 8;
     color: #63d1bb;
+
+    @media (min-width: $screen-tablet) {
+      flex-shrink: 0;
+      width: 175px;
+    }
   }
 
   &__name-text {

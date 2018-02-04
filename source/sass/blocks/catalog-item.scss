@@ -1,14 +1,36 @@
 .catalog-item {
+  position: relative;
   display: flex;
   flex-direction: column;
 
-  &__link {
-    display: flex;
+  @media (min-width: $screen-tablet) {
+    margin-bottom: 55px;
+    flex-direction: row;
+  }
+
+  @media (min-width: $screen-desktop) {
     flex-direction: column;
+  }
+
+  &__name {
     font-weight: bold;
     font-size: $font-size + 2;
     line-height: $line-height - 10;
     color: #000000;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__descr {
+
+    @media (min-width: $screen-tablet) {
+      display: flex;
+      flex-direction: column;
+      padding-left: 25px;
+    }
   }
 
   &__features {
@@ -19,5 +41,9 @@
     font-weight: bold;
     line-height: $line-height--middle;
     color: #000000;
+
+    @media (min-width: $screen-tablet) {
+      margin-top: auto;
+    }
   }
 }
