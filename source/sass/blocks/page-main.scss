@@ -35,11 +35,9 @@
     display: flex;
     flex-direction: column;
     padding-top: 70px;
-    padding-left: 30px;
-    padding-right: 30px;
-    flex-shrink: 0;
-    background-color: $color-grey--middle;
+    width: 100%;
     background-image: url("../../img/hero-mobile@1x.jpg");
+    background-color: $color-grey--middle;
     background-repeat: no-repeat;
     background-position: center 0;
   }

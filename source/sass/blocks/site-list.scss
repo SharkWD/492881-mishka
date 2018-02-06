@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  z-index: 10;
 
   @media (min-width: $screen-tablet) {
     display: flex;
@@ -37,5 +38,13 @@
 
   &__item {
     border-bottom: 1px solid $color-grey;
+
+    @media (min-width: $screen-tablet) {
+      border-bottom: none;
+    }
+
+    @media (min-width: $screen-desktop) {
+      border-bottom: 1px solid $color-grey;
+    }
   }
 }

@@ -20,6 +20,7 @@
     justify-content: center;
     min-height: 79px;
     border-bottom: 1px solid $color-grey;
+    z-index: 18;
 
     @media (min-width: $screen-tablet) {
       margin-right: 170px;
@@ -43,6 +44,7 @@
     cursor: pointer;
     border: none;
     background-color: transparent;
+    z-index: 20;
 
     @media (min-width: $screen-tablet) {
       display: none;

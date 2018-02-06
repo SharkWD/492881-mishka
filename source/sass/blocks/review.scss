@@ -10,6 +10,11 @@
 
   &__wrap {
 
+    @media (max-width: $screen-tablet) {
+      display: flex;
+      flex-direction: column;
+    }
+
     @media (min-width: $screen-tablet) {
       padding-top: 85px;
       background-image: url("../../img/review@1x.jpg");
@@ -24,6 +29,7 @@
 
   &__add-new {
     display: block;
+    align-self: center;
     padding-left: 75px;
     width: 260px;
     font-size: $font-size--middle + 1;
