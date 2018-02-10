@@ -11,6 +11,7 @@
     max-width: 260px;
     margin: 0;
     padding: 0;
+    padding-top: 27px;
     align-self: center;
     font-weight: bold;
     font-size: $font-size--h1;
@@ -29,6 +30,14 @@
       font-size: $font-size--h1 + 26;
       line-height: $line-height + 27;
     }
+  }
+
+  &__title-wrap {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+    width: 100vw;
+    background-color: $color-grey--light;
   }
 
   &__wrap {
@@ -56,6 +65,7 @@
   &--form {
     padding-left: 30px;
     padding-right: 30px;
+    align-items: center;
     max-width: 1150px;
 
     @media (min-width: $screen-desktop) {
