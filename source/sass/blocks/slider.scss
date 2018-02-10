@@ -50,24 +50,23 @@
     width: 130px;
     height: 52px;
     border: 1px solid $color-grey;
-    font-size: 0;
 
-    @media (min-width: $screen-tablet) {
+    /* @media (min-width: $screen-tablet) {
       border: none;
-    }
+    } */
 
-    &--prev {
+    /* &--prev {
       background-image: url("../../img/icon-left-arrow.svg");
       background-repeat: no-repeat;
       background-position: center center;
       border-right: none;
-    }
+    } */
 
-    &--next {
+    /* &--next {
       background-image: url("../../img/icon-right-arrow.svg");
       background-repeat: no-repeat;
       background-position: center center;
-    }
+    } */
   }
 }
 

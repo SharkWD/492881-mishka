@@ -6,8 +6,18 @@
   margin-top: 85px;
   list-style: none;
 
+  @media (min-width: $screen-tablet) {
+    width: 100%;
+  }
+
   @media (min-width: $screen-desktop) {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  &__photo {
+    @media (min-width: $screen-desktop) {
+      width: 100%;
+    }
   }
 }

@@ -8,6 +8,7 @@
 
     @media (min-width: $screen-desktop) {
       margin-left: 175px;
+      max-width: 700px;
     }
 
     p {
@@ -26,11 +27,20 @@
       bottom: 0;
     }
     @media (min-width: $screen-desktop) {
-      right: 175px;
+      right: 205px;
     }
   }
 
   &__btn {
     width: 260px;
+    align-self: center;
+
+    @media (min-width: $screen-tablet) {
+      align-self: flex-start;
+    }
+
+    @media (min-width: $screen-desktop) {
+      margin-left: 175px;
+    }
   }
 }

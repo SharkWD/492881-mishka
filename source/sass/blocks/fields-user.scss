@@ -6,15 +6,33 @@
     flex-direction: row;
   }
 
+  &__wrap {
+
+    @media (min-width: $screen-tablet) {
+      width: 100%;
+    }
+
+    @media (min-width: $screen-desktop) {
+      flex-basis: 700px;
+    }
+  }
+
   &__title {
+    margin-bottom: 15px;
     font-weight: bold;
     font-size: $font-size--middle;
     line-height: $line-height--middle - 8;
     color: $color-main;
 
     @media (min-width: $screen-tablet) {
+      padding-top: 17px;
       flex-shrink: 0;
       width: 175px;
+    }
+
+    @media (min-width: $screen-desktop) {
+      padding-top: 15px;
+      padding-left: 65px;
     }
   }
 }

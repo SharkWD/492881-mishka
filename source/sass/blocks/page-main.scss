@@ -45,6 +45,7 @@
   &--catalog {
     padding-left: 30px;
     padding-right: 30px;
+    align-items: center;
     max-width: 1150px;
 
     @media (min-width: $screen-desktop) {
