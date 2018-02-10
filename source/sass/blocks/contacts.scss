@@ -58,7 +58,7 @@
     width: 260px;
     align-self: center;
 
-    @media (max-width: $screen-desktop) {
+    @media (max-width: $screen-desktop - 1) {
       margin-top: 39px;
       margin-bottom: 39px;
     }

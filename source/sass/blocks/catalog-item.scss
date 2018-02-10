@@ -37,7 +37,7 @@
     padding-right: 25px;
     border: 1px solid #ededed;
 
-    @media (max-width: $screen-tablet) {
+    @media (max-width: $screen-tablet - 1) {
       max-width: 260px;
     }
 

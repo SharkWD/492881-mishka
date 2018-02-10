@@ -2,8 +2,12 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 1150px;
 
   @media (min-width: $screen-desktop) {
+    margin: auto;
     flex-direction: row;
     margin-bottom: 105px;
   }

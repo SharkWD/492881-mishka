@@ -36,7 +36,7 @@
     display: flex;
     justify-content: center;
     padding-bottom: 60px;
-    width: 100vw;
+    width: 100%;
     background-color: $color-grey--light;
   }
 
@@ -49,27 +49,5 @@
     background-color: $color-grey--middle;
     background-repeat: no-repeat;
     background-position: center 0;
-  }
-
-  &--catalog {
-    padding-left: 30px;
-    padding-right: 30px;
-    align-items: center;
-    max-width: 1150px;
-
-    @media (min-width: $screen-desktop) {
-      margin: auto;
-    }
-  }
-
-  &--form {
-    padding-left: 30px;
-    padding-right: 30px;
-    align-items: center;
-    max-width: 1150px;
-
-    @media (min-width: $screen-desktop) {
-      margin: auto;
-    }
   }
 }

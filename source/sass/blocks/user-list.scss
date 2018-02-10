@@ -16,7 +16,7 @@
 
   &__link {
     display: block;
-    padding-top: 25px;
+    padding-top: 20px;
     padding-bottom: 25px;
     padding-right: 30px;
     padding-left: 30px;
@@ -24,6 +24,10 @@
     line-height: $line-height--middle;
     font-weight: bold;
     color: #000000;
+
+    @media (min-width: $screen-desktop) {
+      padding-top: 30px;
+    }
   }
 
   &__item {

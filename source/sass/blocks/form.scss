@@ -3,6 +3,13 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 1150px;
+
+  @media (min-width: $screen-desktop) {
+      margin: auto;
+    }
 
   &__descr {
 
@@ -23,11 +30,8 @@
 
     @media (min-width: $screen-tablet) {
       position: absolute;
-      right: 0;
+      right: 30px;
       bottom: 0;
-    }
-    @media (min-width: $screen-desktop) {
-      right: 205px;
     }
   }
 
