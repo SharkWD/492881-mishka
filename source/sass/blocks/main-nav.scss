@@ -77,14 +77,14 @@
   }
 
   &--closed .site-list__item {
-    @media (max-width: $screen-tablet) {
+    @media (max-width: $screen-tablet - 0.5) {
       display: none;
     }
   }
 
 
   &--closed .user-list__item {
-    @media (max-width: $screen-tablet) {
+    @media (max-width: $screen-tablet - 0.5) {
       display: none;
     }
   }
