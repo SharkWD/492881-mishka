@@ -1,42 +1,31 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
-  max-width: 1150px;
-  background-color: #ffffff;
+  position: relative;
+  width: 100%;
 
-  @media (min-width: $screen-tablet) {
-    flex-direction: row;
-    flex-wrap: wrap;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    @media (min-width: $screen-tablet) {
+      background: linear-gradient(#ffffff 88px, $color-grey--light 88px);
+      z-index: 1;
+    }
   }
 
-  @media (min-width: $screen-desktop) {
-    margin: auto;
-  }
+  &--index.page-header::after {
+      background: linear-gradient(#ffffff 88px, $color-grey--middle 88px);
+      }
 
-  &__logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 79px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 88px;
     border-bottom: 1px solid $color-grey;
-
-    @media (min-width: $screen-tablet) {
-      margin-right: 170px;
-      margin-left: 30px;
-      order: 1;
-    }
-
-    @media (min-width: $screen-desktop) {
-      margin-right: auto;
-      margin-left: auto;
-      order: 2;
-    }
-  }
-
-  &__toggle {
-
-    @media (min-width: $screen-tablet) {
-      display: none;
-    }
+    z-index: 15;
   }
 }

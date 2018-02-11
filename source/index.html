@@ -8,38 +8,40 @@
 </head>
 <body>
 
-  <header class="page-header">
-    <a href="#" class="page-header__logo">
-      <img src="img/logo-mobile.svg" width="86px" height="35px" alt="Магазин ручной работы">
-    </a>
-    <button class="page-header__toggle" type="button">Открыть меню</button>
-    <ul class="menu-site">
-      <li class="menu-site__item">
-        <a href="catalog.html" class="menu-site__link">Каталог товаров</a>
-      </li>
-      <li class="menu-site__item">
-        <a href="form.html" class="menu-site__link">Вязание на заказ</a>
-      </li>
-    </ul>
-    <ul class="menu-user">
-      <li class="menu-user__item">
-        <a href="#" class="menu-user__link">Поиск по сайту</a>
-      </li>
-      <li class="menu-user__item">
-        <a href="#" class="menu-user__link">Корзина: пока пуста</a>
-      </li>
-    </ul>
-    <ul class="menu-promo">
-      <li class="menu-promo__item">
-        <a href="#" class="menu-promo__link">Новые поступления</a>
-      </li>
-      <li class="menu-promo__item">
-        <a href="#" class="menu-promo__link">Распродажа</a>
-      </li>
-    </ul>
-    <div class="delivery">
-      <p class="delevery__descr">Бесплатная доставка по России</p>
-    </div>
+  <header class="page-header  page-header--index">
+    <nav class="main-nav  main-nav--closed  main-nav--no-js">
+      <a href="#" class="main-nav__logo">
+        <img src="img/logo-mobile.svg" width="86px" height="35px" alt="Магазин ручной работы">
+      </a>
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="catalog.html" class="site-list__link">Каталог товаров</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html" class="site-list__link">Вязание на заказ</a>
+        </li>
+      </ul>
+      <ul class="main-nav__list user-list">
+        <li class="user-list__item">
+          <a href="#" class="user-list__link">Поиск по сайту</a>
+        </li>
+        <li class="user-list__item">
+          <a href="#" class="user-list__link">Корзина: пока пуста</a>
+        </li>
+      </ul>
+      <ul class="main-nav__list promo-list">
+        <li class="promo-list__item">
+          <a href="#" class="promo-list__link">Новые поступления</a>
+        </li>
+        <li class="promo-list__item">
+          <a href="#" class="promo-list__link">Распродажа</a>
+        </li>
+      </ul>
+      <div class="delivery">
+        <p class="delevery__descr">Бесплатная доставка по России</p>
+      </div>
+    </nav>
   </header>
 
   <main class="page-main">
@@ -47,7 +49,7 @@
       <h1 class="page-main__title">Милые штуки ручной работы для дома</h1>
       <div class="production">
         <ul class="production__list">
-          <li class="production__item">
+          <li class="production__item  production__item--interior">
             <a href="#" class="production__link">Предметы интерьера</a>
           </li>
           <li class="production__item  production__item--toys">
@@ -80,9 +82,11 @@
             <td class="hits__value">15 см</td>
           </tr>
         </table>
-          <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки" class="hits__photo">
-          <p class="product-card__descr">Цена: 990 руб.</p>
-          <button type="button" class="btn hits__btn">Заказать</button>
+          <div class="product-card">
+            <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки" class="hits__photo">
+            <p class="product-card__descr">Цена: 990 руб.</p>
+            <button type="button" class="btn hits__btn">Заказать</button>
+          </div>
       </div>
     </section>
 
@@ -125,10 +129,10 @@
           </blockquote>
           <ul class="slider__nav">
             <li class="slider__nav-item">
-              <a href="#" class="slider__link">Назад</a>
+              <a href="#" class="slider__link  slider__link--prev">Назад</a>
             </li>
             <li class="slider__nav-item">
-              <a href="#" class="slider__link">Вперед</a>
+              <a href="#" class="slider__link  slider__link--next">Вперед</a>
             </li>
           </ul>
         </div>
@@ -175,6 +179,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/menu.js"></script>
 
   </body>
 </html>

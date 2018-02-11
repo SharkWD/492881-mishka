@@ -25,25 +25,42 @@
   }
 
   &__info {
+    border-collapse: collapse;
 
     tbody {
 
       @media (min-width: $screen-tablet) {
         display: flex;
+        flex: 0 0 auto;
       }
 
       @media (min-width: $screen-desktop) {
         flex-direction: column;
+        width: 350px;
+      }
+    }
+
+    tr {
+
+      @media (min-width: $screen-tablet) {
+        flex: 0 0 auto;
+        width: 334px;
       }
     }
   }
 
+  &__info-field {
+    width: 70px;
+    vertical-align: top;
+  }
+
   &__btn {
     width: 260px;
+    align-self: center;
 
-    @media (min-width: $screen-tablet) {
-      display: flex;
-      align-self: center;
+    @media (max-width: $screen-desktop - 1) {
+      margin-top: 39px;
+      margin-bottom: 39px;
     }
 
     @media (min-width: $screen-desktop) {

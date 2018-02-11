@@ -1,8 +1,9 @@
-.menu-promo {
+.promo-list {
   display: none;
   margin: 0;
   padding: 0;
   list-style: none;
+  z-index: 10;
 
   @media (min-width: $screen-desktop) {
     display: flex;
@@ -12,7 +13,7 @@
 
   &__link {
     display: block;
-    padding-top: 25px;
+    padding-top: 20px;
     padding-bottom: 25px;
     padding-right: 30px;
     padding-left: 30px;

@@ -4,6 +4,9 @@
   &__wrap {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 143px;
     padding-right: 30px;
     padding-left: 30px;
     max-width: 1150px;
@@ -29,10 +32,19 @@
     }
   }
 
+  &__copyright {
+    display: flex;
+    align-items: center;
+  }
+
   &__copyright-developer {
     font-weight: bold;
     font-size: $font-size--middle + 2;
     line-height: $line-height--middle - 5;
     color: #000000;
+  }
+
+  &__copyright-link {
+    display: block;
   }
 }

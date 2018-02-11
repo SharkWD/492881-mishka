@@ -1,13 +1,14 @@
-.menu-site {
+.site-list {
   margin: 0;
   padding: 0;
   list-style: none;
+  z-index: 30;
 
   @media (min-width: $screen-tablet) {
     display: flex;
+    flex-basis: 430px;
     font-size: $font-size;
     order: 3;
-    flex-basis: 430px;
   }
 
   @media (min-width: $screen-desktop) {
@@ -17,9 +18,9 @@
 
   &__link {
     display: block;
-    padding-top: 25px;
+    padding-top: 20px;
     padding-bottom: 25px;
-    padding-right: 30px;
+    padding-right: 5px;
     padding-left: 30px;
     font-size: $font-size--middle;
     line-height: $line-height--middle;
@@ -31,11 +32,20 @@
     }
 
     @media (min-width: $screen-desktop) {
+      padding-top: 30px;
       font-size: $font-size--middle;
     }
   }
 
   &__item {
     border-bottom: 1px solid $color-grey;
+
+    @media (min-width: $screen-tablet) {
+      border-bottom: none;
+    }
+
+    @media (min-width: $screen-desktop) {
+      border-bottom: 1px solid $color-grey;
+    }
   }
 }

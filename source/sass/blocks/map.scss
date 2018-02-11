@@ -1,8 +1,5 @@
 .map {
-
-  @media (min-width: $screen-tablet) {
-    width: 100%;
-  }
+  width: 100%;
 
   @media (min-width: $screen-desktop) {
     position: absolute;

@@ -13,15 +13,24 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+    }
+  }
+
+  &__input-wrap {
+    padding-bottom: 15px;
+
+    @media (min-width: $screen-tablet) {
+      padding-bottom: 25px;
       flex-basis: 250px;
     }
 
-    @media (min-width: $screen-desktop) {;
-      flex-basis: 350px;
+    @media (min-width: $screen-desktop) {
+      flex-basis: 200px;
     }
   }
 
   &__title {
+    margin-bottom: 30px;
     font-weight: bold;
     font-size: $font-size--middle;
     line-height: $line-height--middle - 8;
@@ -30,6 +39,11 @@
     @media (min-width: $screen-tablet) {
       flex-shrink: 0;
       width: 175px;
+    }
+
+    @media (min-width: $screen-desktop) {
+      padding-top: 5px;
+      padding-left: 65px;
     }
   }
 

@@ -10,7 +10,13 @@
 
   &__wrap {
 
+    @media (max-width: $screen-tablet) {
+      display: flex;
+      flex-direction: column;
+    }
+
     @media (min-width: $screen-tablet) {
+      padding-top: 85px;
       background-image: url("../../img/review@1x.jpg");
       background-repeat: no-repeat;
       background-position: top left;
@@ -23,6 +29,7 @@
 
   &__add-new {
     display: block;
+    align-self: center;
     padding-left: 75px;
     width: 260px;
     font-size: $font-size--middle + 1;
@@ -30,8 +37,12 @@
 
     @media (min-width: $screen-tablet) {
       position: absolute;
-      top: 0;
+      top: 105px;
       right: 30px;
+    }
+
+    @media (min-width: $screen-desktop) {
+      top: 120px;
     }
   }
 
@@ -39,5 +50,13 @@
     font-weight: bold;
     font-size: $font-size + 10;
     color: #000000;
+
+    @media (min-width: $screen-tablet) {
+      font-size: $font-size--middle + 26;
+    }
+
+    @media (min-width: $screen-desktop) {
+      font-size: $font-size--middle + 36;
+    }
   }
 }

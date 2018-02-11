@@ -10,48 +10,52 @@
 <body>
 
   <header class="page-header">
-    <a href="index.html" class="page-header__logo">
-      <img src="img/logo-mobile.svg" alt="Магазин ручной работы">
-    </a>
-    <button class="page-header__toggle" type="button">Открыть меню</button>
-    <ul class="menu-site">
-      <li class="menu-site__item">
-        <a href="catalog.html" class="menu-site__link">Каталог товаров</a>
-      </li>
-      <li class="menu-site__item">
-        <a href="form.html" class="menu-site__link">Вязание на заказ</a>
-      </li>
-    </ul>
-    <ul class="menu-user">
-      <li class="menu-user__item">
-        <a href="#" class="menu-user__link">Поиск по сайту</a>
-      </li>
-      <li class="menu-user__item">
-        <a href="#" class="menu-user__link">Корзина: пока пуста</a>
-      </li>
-    </ul>
-    <ul class="menu-promo">
-      <li class="menu-promo__item">
-        <a href="#" class="menu-promo__link">Новые поступления</a>
-      </li>
-      <li class="menu-promo__item">
-        <a href="#" class="menu-promo__link">Распродажа</a>
-      </li>
-    </ul>
-    <div class="delivery">
-      <p class="delevery__descr">Бесплатная доставка по России</p>
-    </div>
+    <nav class="main-nav  main-nav--closed  main-nav--no-js">
+      <a href="index.html" class="main-nav__logo">
+        <img src="img/logo-mobile.svg" width="86px" height="35px" alt="Магазин ручной работы">
+      </a>
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="catalog.html" class="site-list__link">Каталог товаров</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html" class="site-list__link">Вязание на заказ</a>
+        </li>
+      </ul>
+      <ul class="main-nav__list user-list">
+        <li class="user-list__item">
+          <a href="#" class="user-list__link">Поиск по сайту</a>
+        </li>
+        <li class="user-list__item">
+          <a href="#" class="user-list__link">Корзина: пока пуста</a>
+        </li>
+      </ul>
+      <ul class="main-nav__list promo-list">
+        <li class="promo-list__item">
+          <a href="#" class="promo-list__link">Новые поступления</a>
+        </li>
+        <li class="promo-list__item">
+          <a href="#" class="promo-list__link">Распродажа</a>
+        </li>
+      </ul>
+      <div class="delivery">
+        <p class="delevery__descr">Бесплатная доставка по России</p>
+      </div>
+    </nav>
   </header>
 
   <main class="page-main page-main--form">
-    <h1 class="page-main__title">Вязание на заказ</h1>
+    <div class="page-main__title-wrap">
+      <h1 class="page-main__title">Вязание на заказ</h1>
+    </div>
     <form action="https://echo.htmlacademy.ru" class="form" method="post">
       <div class="form__descr">
         <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       </div>
 
       <div class="field-radio">
-        <div class="field-radio__title">Тип</div>
+        <div class="field-radio__title">ТИП</div>
         <div class="field-radio__wrap">
           <div class="field-radio__input-wrap">
             <label class="field-radio__name">
@@ -69,7 +73,7 @@
       </div>
 
       <div class="field-checkbox">
-        <div class="field-checkbox__title">Цвет</div>
+        <div class="field-checkbox__title">ЦВЕТ</div>
         <div class="field-checkbox__wrap">
         <div class="field-checkbox__input-wrap">
           <label class="field-checkbox__name">
@@ -161,7 +165,7 @@
         <div class="field-text__wrap">
           <label class="field-text">
             <span class="field-text__input-wrap">
-              <textarea class="field-text__input" name="test" placeholder="Ваши пожелания">Опишите все ваши пожелания к заказу</textarea>
+              <textarea class="field-text__input  field-text__input--textarea" name="test" placeholder="Ваши пожелания">Опишите все ваши пожелания к заказу</textarea>
             </span>
           </label>
         </div>
@@ -198,3 +202,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/menu.js"></script>
+
+</body>
+</html>
