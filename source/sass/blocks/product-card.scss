@@ -7,6 +7,10 @@
   }
 
   &__descr {
+    margin: 0;
+    padding: 0;
+    padding-top: 14px;
+    margin-bottom: 25px;
     font-weight: bold;
     font-size: $font-size--middle;
     line-height: $line-height--middle;
@@ -16,4 +20,26 @@
     }
   }
 
+  &__photo {
+
+    @media (min-width: $screen-tablet) {
+      position: absolute;
+      right: 0;
+      top: 63px;
+    }
+
+    @media (min-width: $screen-desktop) {
+      top: -150px;
+      z-index: 1;
+    }
+  }
+
+  &__btn {
+    width: 260px;
+    text-transform: uppercase;
+
+    @media (min-width: $screen-tablet) {
+      align-self: flex-start;
+    }
+  }
 }

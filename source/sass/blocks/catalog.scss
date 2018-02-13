@@ -21,8 +21,14 @@
   }
 
   &__photo {
+    height: 195px;
+
+    @media (min-width: $screen-tablet) {
+      height: 334px;
+    }
+
     @media (min-width: $screen-desktop) {
-      width: 100%;
+      height: 460px;
     }
   }
 }

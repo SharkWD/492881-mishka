@@ -56,11 +56,14 @@
   }
 
   &__video-cover {
-    width: 100%;
 
-    @media (max-width: $screen-desktop) {
-      margin-bottom: -10px;
+    img {
+      width: 100%;
     }
+
+    /* @media (max-width: $screen-desktop) {
+      margin-bottom: -10px;
+    } */
   }
 
   &__deskr {

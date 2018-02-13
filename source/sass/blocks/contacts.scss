@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  margin-top: 85px;
   padding-left: 30px;
   padding-right: 30px;
   width: 100%;
@@ -15,6 +16,8 @@
   }
 
   &__title {
+    margin: 0;
+    padding: 0;
     font-weight: bold;
     font-size: $font-size + 3;
     color: #000000;
@@ -25,6 +28,7 @@
   }
 
   &__info {
+    margin-top: 27px;
     border-collapse: collapse;
 
     tbody {
@@ -49,14 +53,26 @@
     }
   }
 
+  &__info-address .contacts__info-value {
+
+    @media (max-width: $screen-tablet) {
+      padding-right: 42px;
+    }
+  }
+
   &__info-field {
     width: 70px;
     vertical-align: top;
   }
 
+  &__info-value {
+    padding-left: 8px;
+  }
+
   &__btn {
     width: 260px;
     align-self: center;
+    text-transform: uppercase;
 
     @media (max-width: $screen-desktop - 1) {
       margin-top: 39px;

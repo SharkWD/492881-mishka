@@ -10,13 +10,20 @@
     margin: auto;
     }
 
+  @media (min-width: $screen-tablet) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
   &__title {
     margin: 0;
     padding: 0;
-    padding-bottom: 14px;
+    padding-bottom: 4px;
+    padding-right: 5px;
     font-weight: bold;
     font-size: $font-size + 10;
     color: #000000;
+    z-index: 10;
 
     @media (min-width: $screen-tablet) {
       font-size: $font-size--h1 + 16;
@@ -29,12 +36,11 @@
   }
 
   &__title-wrap {
-    margin-top: 35px;
+    margin-top: 27px;
 
     @media (min-width: $screen-tablet) {
       display: flex;
-      margin-top: 57px;
-      margin-bottom: 57px;
+      margin-top: 55px;
     }
 
     @media (min-width: $screen-desktop) {
@@ -44,14 +50,16 @@
   }
 
   &__week {
+    text-transform: uppercase;
+    font-size: $font-size + 2;
     font-weight: bold;
-    font-size: $font-size + 10;
     line-height: $line-height--middle - 4;
     color: $color-main;
 
     @media (min-width: $screen-tablet) {
       margin-left: auto;
-      max-width: 170px;
+      max-width: 130px;
+      text-align: center;
       line-height: $line-height--middle - 7;
     }
 
@@ -62,7 +70,8 @@
   }
 
   &__descr {
-    line-height: $line-height--middle - 4;
+    line-height: $line-height;
+    font-size: $font-size + 2;
 
     @media (min-width: $screen-tablet) {
       max-width: 334px;
@@ -71,29 +80,39 @@
     p {
       margin: 0;
       padding: 0;
-      padding-top: 35px;
-      padding-bottom: 35px;
+      padding-top: 20px;
+      padding-bottom: 25px;
     }
   }
 
   &__features {
+    margin-top: -10px;
     margin-bottom: 29px;
     width: 260px;
     border-collapse: collapse;
     line-height: $line-height--middle - 4;
 
     @media (min-width: $screen-tablet) {
+      margin-top: 10px;
       width: 295px;
     }
   }
 
   &__field {
+    padding-top: 11px;
+    padding-bottom: 10px;
     border-bottom: 1px solid $color-grey;
   }
 
   &__value {
-    padding-left: 30px;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    padding-left: 20px;
     border-bottom: 1px solid $color-grey;
+
+    @media (min-width: $screen-tablet) {
+      padding-left: 0;
+    }
   }
 
   &__product-wrap {
@@ -102,31 +121,11 @@
     @media (min-width: $screen-tablet) {
       display: flex;
       flex-direction: column;
+      padding-top: 35px;
     }
 
     @media (min-width: $screen-desktop) {
       padding-left: 195px;
-    }
-  }
-
-  &__photo {
-
-    @media (min-width: $screen-tablet) {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-
-    @media (min-width: $screen-desktop) {
-      top: -100px;
-    }
-  }
-
-  &__btn {
-    width: 260px;
-
-    @media (min-width: $screen-tablet) {
-      align-self: flex-start;
     }
   }
 }

@@ -7,6 +7,7 @@
   @media (min-width: $screen-tablet) {
     display: flex;
     flex-basis: 430px;
+    padding-left: 10px;
     font-size: $font-size;
     order: 3;
   }
@@ -18,16 +19,18 @@
 
   &__link {
     display: block;
-    padding-top: 20px;
-    padding-bottom: 25px;
-    padding-right: 5px;
-    padding-left: 30px;
+    padding-top: 25px;
+    padding-bottom: 29px;
+    padding-right: 3px;
+    padding-left: 73px;
     font-size: $font-size--middle;
     line-height: $line-height--middle;
     font-weight: bold;
     color: #000000;
 
     @media (min-width: $screen-tablet) {
+      padding-top: 23px;
+      padding-left: 40px;
       font-size: $font-size;
     }
 

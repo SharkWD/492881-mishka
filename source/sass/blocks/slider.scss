@@ -7,11 +7,16 @@
     margin: 0;
     padding: 0;
     p {
-      line-height: $line-height--middle;
+      margin: 0;
+      padding: 0;
+      padding-top: 25px;
+      line-height: $line-height;
     }
   }
 
   &__author {
+    padding-top: 30px;
+    padding-bottom: 2px;
     font-weight: bold;
     font-size: $font-size--middle;
     line-height: $line-height--middle;
@@ -28,7 +33,7 @@
     margin: 0;
     padding: 0;
     justify-content: center;
-    margin-top: 37px;
+    margin-top: 30px;
     margin-bottom: 37px;
 
     @media (min-width: $screen-tablet) {
@@ -50,23 +55,6 @@
     width: 130px;
     height: 52px;
     border: 1px solid $color-grey;
-
-    /* @media (min-width: $screen-tablet) {
-      border: none;
-    } */
-
-    /* &--prev {
-      background-image: url("../../img/icon-left-arrow.svg");
-      background-repeat: no-repeat;
-      background-position: center center;
-      border-right: none;
-    } */
-
-    /* &--next {
-      background-image: url("../../img/icon-right-arrow.svg");
-      background-repeat: no-repeat;
-      background-position: center center;
-    } */
   }
 }
 

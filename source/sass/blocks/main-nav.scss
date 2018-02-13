@@ -18,13 +18,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 88px;
+    padding-top: 5px;
+    min-height: 80px;
     border-bottom: 1px solid $color-grey;
     z-index: 18;
 
     @media (min-width: $screen-tablet) {
-      margin-right: 170px;
-      margin-left: 30px;
+      margin-right: 100px;
+      padding-top: 15px;
+      padding-left: 50px;
       order: 1;
     }
 
