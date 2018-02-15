@@ -75,4 +75,19 @@
       }
     }
   }
+
+  &__title-wrap--catalog,
+  &__title-wrap--form {
+    padding-top: 70px;
+    padding-bottom: 75px;
+
+    @media (min-width: $screen-tablet) {
+      padding-top: 25px;
+    }
+
+    @media (min-width: $screen-desktop) {
+      padding-top: 25px;
+      padding-bottom: 70px;
+    }
+  }
 }

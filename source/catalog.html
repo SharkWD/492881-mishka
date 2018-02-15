@@ -3,13 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-
   <title>Каталог</title>
+  <!-- <style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* По умолчанию мобильный макет */
+    background-image: url( "img/catalog-mobile.png" );
+  }
+  /* Планшет */
+  @media ( min-width: 768px ) {
+    HTML {
+      /* Планшетный макет */
+      background-image: url( "img/catalog-tablet.png" );
+    }
+  }
+  /* Десктоп */
+  @media ( min-width: 1150px ) {
+    HTML {
+      /* Десктопный макет */
+      background-image: url( "img/catalog-desktop.png" );
+    }
+  }
+
+  BODY {
+    opacity: .8;
+  }
+  </style> -->
+<link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
+<script src="../node_modules/pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <header class="page-header">
+  <header class="page-header  page-header--catalog">
     <nav class="main-nav  main-nav--closed  main-nav--no-js">
       <a href="index.html" class="main-nav__logo">
         <picture>
@@ -51,8 +79,8 @@
     </nav>
   </header>
 
-  <main class="page-main page-main--catalog">
-    <div class="page-main__title-wrap">
+  <main class="page-main page-main">
+    <div class="page-main__title-wrap  page-main__title-wrap--catalog">
       <h1 class="page-main__title">Каталог товаров</h1>
     </div>
     <ul class="catalog">
@@ -90,7 +118,7 @@
       </li>
       <li class="catalog-item">
         <a href="#" class="catalog-item__link">
-          <picture  class="catalog__photo">
+          <picture class="catalog__photo">
             <source media="(min-width: 1150px)"
                     srcset="img/photo-toys-desktop@2x.jpg 2x, img/photo-toys-desktop@1x.jpg 1x">
             <source media="(min-width: 768px)"
@@ -116,9 +144,9 @@
           <img src="img/video-mobile@1x.jpg" alt="Процесс производства">
         </picture>
       </div>
-      <div class="manufacture__deskr">
+      <div class="manufacture__deskr-wrap">
         <p class="manufacture__title">Процесс производства</p>
-        <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <p class="manufacture__deskr">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <button class="btn manufacture__btn" type="button">Сделать заказ</button>
       </div>
     </section>

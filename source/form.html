@@ -3,8 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-
   <title>Форма для заказа</title>
+  <style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* По умолчанию мобильный макет */
+    background-image: url( "img/form-mobile.png" );
+  }
+  /* Планшет */
+  @media ( min-width: 768px ) {
+    HTML {
+      /* Планшетный макет */
+      background-image: url( "img/form-tablet.png" );
+    }
+  }
+  /* Десктоп */
+  @media ( min-width: 1150px ) {
+    HTML {
+      /* Десктопный макет */
+      background-image: url( "img/form-desktop.png" );
+    }
+  }
+
+  BODY {
+    opacity: .8;
+  }
+  </style>
+<link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
+<script src="../node_modules/pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -52,7 +80,7 @@
   </header>
 
   <main class="page-main page-main--form">
-    <div class="page-main__title-wrap">
+    <div class="page-main__title-wrap  page-main__title-wrap--form">
       <h1 class="page-main__title">Вязание на заказ</h1>
     </div>
     <form action="https://echo.htmlacademy.ru" class="form" method="post">
@@ -166,7 +194,7 @@
         </div>
       </div>
 
-      <div class="field-text">
+      <div class="field-text  field-text--option">
         <div class="field-text__title">ДОП</div>
         <div class="field-text__wrap">
           <label class="field-text">

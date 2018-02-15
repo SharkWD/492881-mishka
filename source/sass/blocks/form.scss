@@ -3,13 +3,22 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
+  padding-top: 10px;
   padding-left: 30px;
   padding-right: 30px;
   max-width: 1150px;
 
+  @media (min-width: $screen-tablet) {
+    padding-top: 75px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
   @media (min-width: $screen-desktop) {
-      margin: auto;
-    }
+    margin: auto;
+    padding-top: 155px;
+    padding-bottom: 50px;
+  }
 
   &__descr {
 
@@ -19,8 +28,18 @@
     }
 
     p {
+      margin: 0;
+      padding: 0;
+      padding-top: 13px;
+      padding-bottom: 13px;
       font-size: $font-size - 2;
       line-height: $line-height--middle;
+
+      @media (min-width: $screen-tablet) {
+        padding-top: 0;
+        font-size: $font-size--middle;
+        line-height: $line-height;
+      }
     }
   }
 
@@ -30,21 +49,42 @@
 
     @media (min-width: $screen-tablet) {
       position: absolute;
-      right: 30px;
-      bottom: 0;
+      right: 50px;
+      bottom: 10px;
+    }
+
+    @media (min-width: $screen-desktop) {
+      right: 225px;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+      padding-top: 8px;
+      padding-bottom: 5px;
+      font-size: $font-size - 1;
+      line-height: $font-size--middle - 1;
+
+      @media (min-width: $screen-tablet) {
+        font-size: $font-size--middle;
+        line-height: $line-height;
+      }
     }
   }
 
   &__btn {
     width: 260px;
     align-self: center;
+    margin-top: 27px;
 
     @media (min-width: $screen-tablet) {
       align-self: flex-start;
+      width: 233px;
     }
 
     @media (min-width: $screen-desktop) {
       margin-left: 175px;
+      margin-top: 23px;
     }
   }
 }

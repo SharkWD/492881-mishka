@@ -2,6 +2,7 @@
 
   @media (min-width: $screen-desktop) {
     margin: auto;
+    padding-bottom: 75px;
   }
 
   &__wrap {
@@ -32,8 +33,10 @@
     }
 
     @media (min-width: $screen-desktop) {
-      padding-left: 225px;
+      margin-left: 55px;
+      padding-left: 175px;
       padding-top: 88px;
+      padding-bottom: 80px;
     }
   }
 
@@ -58,6 +61,7 @@
 
     @media (min-width: $screen-desktop) {
       top: 83px;
+      right: 55px;
     }
   }
 

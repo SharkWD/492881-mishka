@@ -10,8 +10,15 @@
     height: 100%;
 
     @media (min-width: $screen-tablet) {
-      background: linear-gradient(#ffffff 88px, $color-grey--light 88px);
+      background: linear-gradient(#ffffff 84px, $color-grey--light 84px);
       z-index: 1;
+    }
+  }
+
+  &--catalog.page-header::after {
+
+    @media (min-width: $screen-desktop) {
+      background: linear-gradient(#ffffff 89px, $color-grey--light 89px);
     }
   }
 
@@ -21,7 +28,7 @@
       background: linear-gradient(#ffffff 84px, $color-grey--middle 84px);
     }
 
-    @media (min-width: $screen-tablet) {
+    @media (min-width: $screen-desktop) {
       background: linear-gradient(#ffffff 89px, $color-grey--middle 89px);
     }
   }

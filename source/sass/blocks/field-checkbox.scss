@@ -1,10 +1,13 @@
 .field-checkbox {
   display: flex;
   flex-direction: column;
+  padding-top: 10px;
 
   @media (min-width: $screen-tablet) {
     display: flex;
     flex-direction: row;
+    padding-top: 75px;
+    padding-bottom: 15px;
   }
 
   &__wrap {
@@ -17,15 +20,16 @@
   }
 
   &__input-wrap {
-    padding-bottom: 15px;
+    padding-bottom: 30px;
 
     @media (min-width: $screen-tablet) {
-      padding-bottom: 25px;
-      flex-basis: 250px;
+      padding-bottom: 47px;
+      flex-basis: 248px;
     }
 
     @media (min-width: $screen-desktop) {
-      flex-basis: 200px;
+      flex-basis: 260px;
+      padding-left: 10px;
     }
   }
 
@@ -38,6 +42,8 @@
 
     @media (min-width: $screen-tablet) {
       flex-shrink: 0;
+      padding-top: 7px;
+      padding-left: 5px;
       width: 175px;
     }
 
@@ -48,9 +54,15 @@
   }
 
   &__name-text {
+    padding-left: 40px;
     font-weight: bold;
     font-size: $font-size--middle;
     line-height: $line-height--middle - 6;
     color: #000000;
+
+    @media (min-width: $screen-tablet) {
+      padding-left: 50px;
+      font-size: $font-size--middle + 2;
+    }
   }
 }

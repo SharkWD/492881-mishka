@@ -19,8 +19,13 @@
     padding-top: 32px;
     font-weight: bold;
     font-size: $font-size + 2;
-    line-height: $line-height - 10;
+    line-height: $line-height - 6;
     color: #000000;
+
+    @media (min-width: $screen-tablet) {
+      padding-top: 0;
+      font-size: $font-size + 5;
+    }
 
     @media (min-width: $screen-desktop) {
       max-width: 317px;
@@ -33,6 +38,7 @@
   }
 
   &__descr {
+    padding-top: 25px;
     padding-left: 25px;
     padding-right: 25px;
     border: 1px solid #ededed;
@@ -51,14 +57,21 @@
   &__features {
     margin: 0;
     padding: 0;
-    padding-bottom: 25px;
-    margin-right: 27px;
+    padding-top: 3px;
+    padding-bottom: 18px;
     font-size: $font-size - 2;
+
+    @media (min-width: $screen-tablet) {
+      padding-top: 7px;
+      font-size: $font-size;
+    }
   }
 
   &__price {
-    padding-top: 25px;
-    padding-bottom: 10px;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 27px;
     font-weight: bold;
     line-height: $line-height--middle;
     color: #000000;
@@ -66,6 +79,7 @@
 
     @media (min-width: $screen-tablet) {
       margin-top: auto;
+      font-size: $font-size + 2;
     }
   }
 }

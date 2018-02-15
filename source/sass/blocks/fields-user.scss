@@ -1,9 +1,11 @@
 .fields-user {
   display: flex;
   flex-direction: column;
+  padding-top: 10px;
 
   @media (min-width: $screen-tablet) {
     flex-direction: row;
+    padding-top: 42px;
   }
 
   &__wrap {
@@ -14,20 +16,21 @@
 
     @media (min-width: $screen-desktop) {
       flex-basis: 700px;
+      padding-left: 10px;
     }
   }
 
   &__title {
-    margin-bottom: 15px;
+    margin-bottom: 8px;
     font-weight: bold;
     font-size: $font-size--middle;
     line-height: $line-height--middle - 8;
     color: $color-main;
 
     @media (min-width: $screen-tablet) {
-      padding-top: 17px;
+      padding-top: 25px;
       flex-shrink: 0;
-      width: 175px;
+      width: 170px;
     }
 
     @media (min-width: $screen-desktop) {
