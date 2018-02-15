@@ -3,7 +3,11 @@
   flex-direction: column;
 
   @media (max-width: $screen-tablet) {
-  align-items: center;
+    align-items: center;
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin-top: 55px;
   }
 
   &__descr {
@@ -17,6 +21,8 @@
 
     @media (min-width: $screen-tablet) {
       margin-left: 70px;
+      padding-top: 25px;
+      font-size: $font-size--middle + 3;
     }
   }
 
@@ -29,16 +35,18 @@
     }
 
     @media (min-width: $screen-desktop) {
-      top: -150px;
+      top: -100px;
       z-index: 1;
     }
   }
 
   &__btn {
-    width: 260px;
+    min-width: 260px;
     text-transform: uppercase;
 
     @media (min-width: $screen-tablet) {
+      min-width: 290px;
+      margin-top: 10px;
       align-self: flex-start;
     }
   }

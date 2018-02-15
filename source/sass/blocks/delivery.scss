@@ -10,6 +10,9 @@
     padding-right: 53px;
     order: 4;
   }
+  @media (min-width: $screen-desktop) {
+    padding-top: 0;
+  }
 
   &__descr {
     margin: 0;

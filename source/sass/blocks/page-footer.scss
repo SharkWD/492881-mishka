@@ -13,6 +13,8 @@
 
 
     @media (min-width: $screen-tablet) {
+      padding-left: 50px;
+      padding-right: 50px;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;

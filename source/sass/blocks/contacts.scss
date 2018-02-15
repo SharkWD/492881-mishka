@@ -8,11 +8,25 @@
   width: 100%;
   max-width: 1150px;
 
+  @media (min-width: $screen-tablet) {
+    margin-top: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
   @media (min-width: $screen-desktop) {
     margin: auto;
     margin-top: 75px;
     padding-left: 225px;
     min-height: 562px;
+  }
+
+  &__wrap {
+
+    @media (min-width: $screen-tablet) {
+      display: flex;
+      padding-top: 20px;
+    }
   }
 
   &__title {
@@ -21,6 +35,11 @@
     font-weight: bold;
     font-size: $font-size + 3;
     color: #000000;
+
+    @media (min-width: $screen-tablet) {
+      font-size: $font-size--h1 + 16;
+      line-height: $line-height + 20;
+    }
 
     @media (min-width: $screen-desktop) {
       font-size: $font-size--middle + 36;
@@ -63,10 +82,18 @@
   &__info-field {
     width: 70px;
     vertical-align: top;
+
+    @media (min-width: $screen-tablet) {
+      font-size: $font-size--middle;
+    }
   }
 
   &__info-value {
     padding-left: 8px;
+
+    @media (min-width: $screen-tablet) {
+      font-size: $font-size--middle;
+    }
   }
 
   &__btn {
@@ -77,6 +104,12 @@
     @media (max-width: $screen-desktop - 1) {
       margin-top: 39px;
       margin-bottom: 39px;
+    }
+
+    @media (min-width: $screen-tablet) {
+      margin-top: 55px;
+      margin-bottom: 55px;
+      width: 230px;
     }
 
     @media (min-width: $screen-desktop) {

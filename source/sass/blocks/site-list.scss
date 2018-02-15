@@ -13,7 +13,9 @@
   }
 
   @media (min-width: $screen-desktop) {
+    padding-left: 10px;
     display: flex;
+    flex-basis: 460px;
     order: 1;
   }
 
@@ -48,6 +50,7 @@
     }
 
     @media (min-width: $screen-desktop) {
+      margin-right: 30px;
       border-bottom: 1px solid $color-grey;
     }
   }

@@ -5,9 +5,16 @@
   width: 100%;
   max-width: 1150px;
 
+  @media (min-width: $screen-tablet) {
+    padding-top: 55px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
   @media (min-width: $screen-desktop) {
     margin: auto;
     padding-left: 225px;
+    padding-top: 170px;
   }
 
   &__title {
@@ -34,6 +41,17 @@
     list-style: none;
     margin-top: 27px;
     margin-bottom: -26px;
+
+    @media (min-width: $screen-tablet) {
+      padding-top: 30px;
+    }
+  }
+
+  &__list-right {
+
+    @media (min-width: $screen-desktop) {
+      margin-right: auto;
+    }
   }
 
   &__item {
@@ -46,10 +64,12 @@
     width: 260px;
 
     @media (min-width: $screen-tablet) {
+      padding-right: 40px;
+      padding-bottom: 30px;
       width: 334px;
     }
 
-    @media (min-width: $screen-tablet) {
+    @media (min-width: $screen-desktop) {
       width: 350px;
     }
   }
@@ -59,6 +79,11 @@
     font-size: $font-size--middle;
     line-height: $line-height - 10;
     color: #000000;
+
+    @media (min-width: $screen-tablet) {
+      font-size: $font-size--middle + 3;
+      line-height: $line-height--middle - 2;
+    }
   }
 
   &__wrap {

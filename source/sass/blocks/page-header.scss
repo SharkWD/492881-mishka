@@ -20,6 +20,10 @@
     @media (min-width: $screen-tablet) {
       background: linear-gradient(#ffffff 84px, $color-grey--middle 84px);
     }
+
+    @media (min-width: $screen-tablet) {
+      background: linear-gradient(#ffffff 89px, $color-grey--middle 89px);
+    }
   }
 
   &::before {
@@ -33,6 +37,10 @@
 
     @media (min-width: $screen-tablet) {
       height: 84px;
+    }
+
+    @media (min-width: $screen-desktop) {
+      height: 89px;
     }
   }
 }
