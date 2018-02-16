@@ -4,26 +4,28 @@
   flex-direction: column;
   margin-bottom: 50px;
   padding-top: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-  max-width: 1150px;
 
   @media (min-width: $screen-tablet) {
     padding-top: 75px;
-    padding-left: 50px;
-    padding-right: 50px;
   }
 
   @media (min-width: $screen-desktop) {
     margin: auto;
-    padding-top: 155px;
+    padding-top: 125px;
     padding-bottom: 50px;
   }
 
   &__descr {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    @media (min-width: $screen-tablet) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
 
     @media (min-width: $screen-desktop) {
-      margin-left: 175px;
+      margin-left: 185px;
       max-width: 700px;
     }
 
@@ -44,17 +46,20 @@
   }
 
   &__required {
+    padding-left: 30px;
+    padding-right: 30px;
     font-size: $font-size - 2;
     line-height: $line-height--middle;
 
     @media (min-width: $screen-tablet) {
       position: absolute;
-      right: 50px;
+      right: 23px;
       bottom: 10px;
     }
 
     @media (min-width: $screen-desktop) {
-      right: 225px;
+      right: 200px;
+      bottom: 60px;
     }
 
     p {
@@ -79,11 +84,12 @@
 
     @media (min-width: $screen-tablet) {
       align-self: flex-start;
+      margin-left: 50px;
       width: 233px;
     }
 
     @media (min-width: $screen-desktop) {
-      margin-left: 175px;
+      margin-left: 230px;
       margin-top: 23px;
     }
   }

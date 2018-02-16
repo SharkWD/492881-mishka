@@ -2,10 +2,15 @@
   display: flex;
   flex-direction: column;
   padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
 
   @media (min-width: $screen-tablet) {
     flex-direction: row;
     padding-top: 42px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
   }
 
   &__wrap {
@@ -15,8 +20,8 @@
     }
 
     @media (min-width: $screen-desktop) {
-      flex-basis: 700px;
-      padding-left: 10px;
+      flex-basis: 710px;
+      padding-left: 15px;
     }
   }
 
@@ -34,7 +39,7 @@
     }
 
     @media (min-width: $screen-desktop) {
-      padding-top: 15px;
+      padding-top: 23px;
       padding-left: 65px;
     }
   }
