@@ -48,11 +48,40 @@
     }
 
     &--interior {
+      position: relative;
       background-color: $color-main;
     }
 
     &--toys {
+      position: relative;
       background-color: $color-main--dark;
+    }
+  }
+
+  &__icon-interior {
+    position: absolute;
+    top: 24px;
+    right: 35px;
+    width: 40px;
+    height: 62px;
+    opacity: 0.5;
+
+    @media (min-width: $screen-tablet) {
+      top: 30px;
+    }
+  }
+
+  &__icon-toy {
+    position: absolute;
+    top: 22px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    opacity: 0.5;
+
+    @media (min-width: $screen-tablet) {
+      top: 30px;
+      right: 35px;
     }
   }
 }

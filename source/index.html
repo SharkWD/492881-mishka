@@ -86,10 +86,18 @@
       <div class="production">
         <ul class="production__list">
           <li class="production__item">
-            <a href="#" class="production__link  production__link--interior">Предметы <br> интерьера</a>
+            <a href="#" class="production__link  production__link--interior">Предметы <br> интерьера
+              <svg class="production__icon-interior">
+                <use xlink:href="img/sprite.svg#interior" />
+              </svg>
+            </a>
           </li>
           <li class="production__item">
-            <a href="#" class="production__link  production__link--toys">Детские <br> игрушки</a>
+            <a href="#" class="production__link  production__link--toys">Детские <br> игрушки
+              <svg class="production__icon-toy">
+                <use xlink:href="img/sprite.svg#toy" />
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
@@ -226,6 +234,7 @@
   </footer>
 
   <script src="js/menu.js"></script>
-
+  <script src="js/svg4everybody.js"></script>
+  <script>svg4everybody();</script>
   </body>
 </html>
