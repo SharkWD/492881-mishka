@@ -1,12 +1,13 @@
 .advantages {
-  margin-top: 69px;
+  margin-top: 29px;
   padding-left: 30px;
   padding-right: 30px;
   width: 100%;
   max-width: 1150px;
 
   @media (min-width: $screen-tablet) {
-    padding-top: 55px;
+    margin-top: 0;
+    padding-top: 60px;
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -14,7 +15,7 @@
   @media (min-width: $screen-desktop) {
     margin: auto;
     padding-left: 225px;
-    padding-top: 170px;
+    padding-top: 75px;
   }
 
   &__title {
@@ -65,7 +66,7 @@
 
     @media (min-width: $screen-tablet) {
       padding-right: 40px;
-      padding-bottom: 30px;
+      padding-bottom: 28px;
       width: 334px;
     }
 
