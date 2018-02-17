@@ -56,6 +56,7 @@
   }
 
   &__item {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,6 +75,60 @@
       width: 350px;
     }
   }
+
+  &__icon-flower {
+    position: absolute;
+    left: 8px;
+    top: 3px;
+    width: 32px;
+    height: 37px;
+    fill: $color-main;
+  }
+
+  &__icon-money {
+    position: absolute;
+    top: 4px;
+    width: 47px;
+    height: 27px;
+    fill: $color-main;
+  }
+
+  &__icon-heart {
+    position: absolute;
+    top: 10px;
+    left: 7px;
+    width: 33px;
+    height: 28px;
+    fill: $color-main;
+  }
+
+  &__icon-ball {
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    width: 34px;
+    height: 34px;
+    fill: $color-main;
+  }
+
+  &__icon-rocket {
+    position: absolute;
+    top: 7px;
+    left: -4px;
+    width: 54px;
+    height: 23px;
+    fill: $color-main;
+  }
+
+  &__icon-gift {
+    position: absolute;
+    top: 7px;
+    left: 4px;
+    width: 33px;
+    height: 33px;
+    fill: $color-main;
+  }
+
 
   &__link {
     font-weight: bold;

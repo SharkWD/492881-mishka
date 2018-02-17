@@ -36,6 +36,7 @@
   }
 
   &__title {
+    position: relative;
     margin: 0;
     padding: 0;
     font-weight: bold;
@@ -49,6 +50,23 @@
 
     @media (min-width: $screen-desktop) {
       font-size: $font-size--middle + 36;
+    }
+  }
+
+  &__icon-flag {
+    display: none;
+
+    @media (min-width: $screen-tablet) {
+      position: absolute;
+      top: -15px;
+      right: 5px;
+      display: inline;
+      width: 47px;
+      height: 82px;
+    }
+
+    @media (min-width: $screen-desktop) {
+      left: -110px;
     }
   }
 
