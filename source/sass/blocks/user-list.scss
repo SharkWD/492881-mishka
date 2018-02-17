@@ -7,6 +7,7 @@
   @media (min-width: $screen-tablet) {
     display: flex;
     margin-left: auto;
+    margin-right: 50px;
     order: 2;
   }
 
@@ -34,7 +35,54 @@
     }
   }
 
+  &__link--search {
+    position: relative;
+
+    @media (min-width: $screen-tablet) {
+      font-size: 0;
+      padding-right: 15px;
+    }
+  }
+
+  &__link--cart {
+    position: relative;
+  }
+
+  &__icon-search {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    top: 30px;
+    left: 30px;
+
+    @media (min-width: $screen-tablet) {
+    top: 37px;
+    left: 33px;
+    }
+  }
+
+  &__icon-cart {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 20px;
+    height: 19px;
+
+    @media (min-width: $screen-tablet) {
+      top: 34px;
+      left: 25px;
+    }
+  }
+
   &__item {
     border-bottom: 1px solid $color-grey;
+  }
+
+  &__item-search {
+
+    @media (min-width: $screen-tablet) {
+      border-left: 1px solid $color-grey;
+      border-right: 1px solid $color-grey;
+    }
   }
 }
